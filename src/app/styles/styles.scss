@@ -2,5 +2,15 @@
 @import "3rd-party/bootstrap";
 
 body {
-  background: dodgerblue;
+  background: #8c1a2c;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    border-top: 100vh solid #f7f3f0;
+    border-left: 100vh solid transparent;
+  }
 }

@@ -1,0 +1,43 @@
+<div class="list-group">
+  <a href="#" class="list-group-item row" *ngFor="let item of winelist.Products.List">
+    <span class="media">
+      <span class="media-left">
+        <img src="{{item.Labels[0].Url}}" alt="{{item.Labels[0].Name}}">
+      </span>
+      <span class="media-body">
+        {{item.Vineyard.Name}}
+        <h4 class="list-group-item-heading">
+          {{item.Appellation.Name}} {{item.Varietal.Name}} {{item.Vintage}}
+        </h4>
+        <span class="list-group-item-text">
+          <span *ngIf="item.Appellation.Region.Area">
+            {{item.Appellation.Region.Area}},
+          </span>
+          {{item.Appellation.Region.Name}}
+        </span>
+      </span>
+    </span>
+  </a>
+</div>
+
+<!--
+<img style="position: absolute;" src="{{item.Vineyard.ImageUrl}}" alt="">
+<ul>
+  <li *ngFor="let item of winelist.Products.List">
+    <div class="panel panel-primary">
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <img src="{{item.Vineyard.ImageUrl}}" alt="">
+        {{item.Name}}
+
+        <div *ngFor="let label of item.Labels">
+          <img src="{{label.Url}}" alt="{{label.Name}}">
+        </div>
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+</ul>
+
+
+<pre>{{wineCom | json}}</pre>
+-->
