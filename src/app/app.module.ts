@@ -6,13 +6,16 @@ import { MywinesComponent }         from "./components/mywines/mywines.component
 import { MywinesOverviewComponent } from "./components/mywines/overview/overview.component";
 import {MywineWineService} from "./components/mywines/wine-com/mywines-wine.service";
 import {HttpModule} from "@angular/http";
+import { HeaderComponent } from './components/layout/header/header.component';
 
 @NgModule({
   imports:      [ BrowserModule, HttpModule ],
   declarations: [
     AppComponent,
+    HeaderComponent,
     MywinesComponent,
-    MywinesOverviewComponent ], // Components
+    MywinesOverviewComponent,
+    HeaderComponent ], // Components
   bootstrap:    [ AppComponent ],
   providers:    [ MywineWineService ] // Services
 })

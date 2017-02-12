@@ -4,7 +4,7 @@ import {Component} from "@angular/core";
   selector: "mywines",
   template: `
     <div class="row">
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6">        
         <mywines-overview></mywines-overview>
       </div>
     </div>
