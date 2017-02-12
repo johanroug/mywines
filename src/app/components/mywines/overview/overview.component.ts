@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
 import {MywineWineService} from "../wine-com/mywines-wine.service";
+import {IWinesCom} from "../models";
 
 @Component({
   selector: "mywines-overview",
@@ -7,13 +8,12 @@ import {MywineWineService} from "../wine-com/mywines-wine.service";
   templateUrl: "./overview.component.html"
 })
 export class MywinesOverviewComponent {
-  public wineCom;
-
+  public wineCom: Object;
   constructor(private _mywineWineService: MywineWineService) {
 
     this._mywineWineService.getData()
       .subscribe(
-        (data) => {
+        (data: IWinesCom) => {
           this.wineCom = data.Products.List;
         }
       );
