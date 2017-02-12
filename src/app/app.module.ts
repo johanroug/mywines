@@ -3,11 +3,11 @@ import { BrowserModule }            from '@angular/platform-browser';
 import { HttpModule }               from "@angular/http";
 import { AppComponent }             from './app.component';
 
+import { HeaderComponent }          from './components/layout/header/header.component';
 import { MywinesComponent }         from "./components/mywines/mywines.component";
 import { MywinesOverviewComponent } from "./components/mywines/overview/overview.component";
-import { MywineWineService }        from "./components/mywines/wine-com/mywines-wine.service";
-import { HeaderComponent }          from './components/layout/header/header.component';
-import { DetailsComponent }         from './components/mywines/details/details.component';
+import { MywinesDetailsComponent }  from './components/mywines/details/details.component';
+import { WineComService }           from "./components/mywines/wine-com/wineCom.service";
 
 @NgModule({
   imports:      [ BrowserModule, HttpModule ],
@@ -16,9 +16,8 @@ import { DetailsComponent }         from './components/mywines/details/details.c
     HeaderComponent,
     MywinesComponent,
     MywinesOverviewComponent,
-    HeaderComponent,
-    DetailsComponent ], // Components
+    MywinesDetailsComponent ], // Components
   bootstrap:    [ AppComponent ],
-  providers:    [ MywineWineService ] // Services
+  providers:    [ WineComService ] // Services
 })
 export class AppModule { }
