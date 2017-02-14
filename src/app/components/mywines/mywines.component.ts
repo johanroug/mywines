@@ -8,7 +8,7 @@ import {Component} from "@angular/core";
         <mywines-overview></mywines-overview>
       </div>
       <div class="col-xs-12 col-md-6">
-        <mywines-details></mywines-details>
+        <router-outlet></router-outlet>
       </div>
     </div>
   `
