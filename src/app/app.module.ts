@@ -10,6 +10,7 @@ import { MywinesDetailsComponent }  from './components/mywines/details/details.c
 import { WineComService }           from "./components/mywines/wine-com/wineCom.service";
 import { routing }                  from "./app.routing";
 import { MywinesStartComponent }    from './components/mywines/start/start.component';
+import { OwnwinesComponent } from './components/mywines/ownwines/ownwines.component';
 
 @NgModule({
   imports:      [
@@ -23,7 +24,8 @@ import { MywinesStartComponent }    from './components/mywines/start/start.compo
     MywinesComponent,
     MywinesOverviewComponent,
     MywinesDetailsComponent,
-    MywinesStartComponent ], // Components
+    MywinesStartComponent,
+    OwnwinesComponent ], // Components
   bootstrap:    [ AppComponent ],
   providers:    [ WineComService ] // Services
 })
