@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {Subscription} from "rxjs/Rx";
 
@@ -10,7 +10,7 @@ import {WineComService} from "../wine-com/wineCom.service";
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
-export class MywinesDetailsComponent implements OnInit {
+export class MywinesDetailsComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
   private wineIndex: number;
   public selectedWine: IWinesCom;
@@ -29,6 +29,10 @@ export class MywinesDetailsComponent implements OnInit {
           );
       }
     );
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }
