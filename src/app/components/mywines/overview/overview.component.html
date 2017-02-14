@@ -1,5 +1,5 @@
 <div class="list-group">
-  <a href="#" class="list-group-item row" *ngFor="let item of wineCom" (click)="details(item)">
+  <a class="list-group-item row" *ngFor="let item of wineCom; let i = index" [routerLink]="i">
     <span class="media">
       <span class="media-left">
         <img src="{{item.Labels[0].Url}}" alt="{{item.Labels[0].Name}}">

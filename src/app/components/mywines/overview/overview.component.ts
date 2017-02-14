@@ -18,8 +18,4 @@ export class MywinesOverviewComponent {
         }
       );
   }
-
-  details(item: IWinesCom) {
-
-  }
 }
