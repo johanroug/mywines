@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ownwines.component.scss']
 })
 export class OwnwinesComponent implements OnInit {
-
-  constructor() { }
+  public ownWinesList: Array<Object>;
+  constructor() {
+    this.ownWinesList = [
+      {
+        name: "my wine",
+        country: "Denmark"
+      }
+    ]
+  }
 
   ngOnInit() {
   }

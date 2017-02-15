@@ -1,3 +1,17 @@
-<p>
-  ownwines works!
-</p>
+<div class="list-group">
+  <a class="list-group-item row" *ngFor="let item of ownWinesList">
+    <span class="media">
+      <span class="media-left">
+        <!--<img src="{{item.Labels[0].Url}}" alt="{{item.Labels[0].Name}}">-->
+      </span>
+      <span class="media-body">
+        <h4 class="list-group-item-heading">
+          {{item.name}}
+        </h4>
+        <span class="list-group-item-text">
+          {{item.country}}
+        </span>
+      </span>
+    </span>
+  </a>
+</div>
