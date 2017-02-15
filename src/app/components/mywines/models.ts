@@ -1,3 +1,9 @@
+export interface ICreateOwnWineItem {
+  value: {
+    Name: string;
+    Country: string;
+  }
+}
 export interface IWinesCom {
   Products: {
     List: {

@@ -1,22 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {MywinesDataService} from "../mywinesdata.service";
 
 @Component({
   selector: 'app-ownwines',
   templateUrl: './ownwines.component.html',
   styleUrls: ['./ownwines.component.scss']
 })
-export class OwnwinesComponent implements OnInit {
+export class OwnwinesComponent {
   public ownWinesList: Array<Object>;
-  constructor() {
-    this.ownWinesList = [
-      {
-        name: "my wine",
-        country: "Denmark"
-      }
-    ]
-  }
 
-  ngOnInit() {
+  constructor(private _handleDataService: MywinesDataService) {
+    this.ownWinesList = this._handleDataService.getOwnWineList();
   }
-
 }

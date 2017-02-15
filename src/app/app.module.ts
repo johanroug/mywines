@@ -11,11 +11,14 @@ import { routing }                  from "./app.routing";
 import { MywinesStartComponent }    from './components/mywines/start/start.component';
 import { OwnwinesComponent } from './components/mywines/ownwines/ownwines.component';
 import { CreateItemComponent } from './components/mywines/create-item/create-item.component';
+import {FormsModule} from "@angular/forms";
+import {MywinesDataService} from "./components/mywines/mywinesdata.service";
 
 @NgModule({
   imports:      [
     BrowserModule,
     HttpModule,
+    FormsModule,
     routing
   ],
   declarations: [
@@ -27,6 +30,8 @@ import { CreateItemComponent } from './components/mywines/create-item/create-ite
     OwnwinesComponent,
     CreateItemComponent ], // Components
   bootstrap:    [ AppComponent ],
-  providers:    [ WineComService ] // Services
+  providers:    [
+    WineComService,
+    MywinesDataService ] // Services
 })
 export class AppModule { }

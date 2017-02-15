@@ -1,7 +1,9 @@
 import {Routes, RouterModule} from "@angular/router";
-import {MYWINES_ONLINE_ROUTES} from "./components/mywines/mywines.online.routes.ts";
-import {OwnwinesComponent} from "./components/mywines/ownwines/ownwines.component";
+
 import {MywinesOverviewComponent} from "./components/mywines/overview/overview.component";
+import {MYWINES_ONLINE_ROUTES} from "./components/mywines/mywines.online.routes.ts";
+
+import {OwnwinesComponent} from "./components/mywines/ownwines/ownwines.component";
 import {MYWINES_OWN_ROUTES} from "./components/mywines/mywines.own.routes";
 
 const APP_ROUTES: Routes = [
