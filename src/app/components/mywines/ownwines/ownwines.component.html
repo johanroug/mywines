@@ -1,5 +1,6 @@
-<div class="list-group">
-  <a class="list-group-item row" *ngFor="let item of ownWinesList">
+<div class="col-xs-12 col-md-6">
+  <div class="list-group">
+    <a class="list-group-item row" *ngFor="let item of ownWinesList">
     <span class="media">
       <span class="media-left">
         <!--<img src="{{item.Labels[0].Url}}" alt="{{item.Labels[0].Name}}">-->
@@ -13,5 +14,9 @@
         </span>
       </span>
     </span>
-  </a>
+    </a>
+  </div>
+</div>
+<div class="col-xs-12 col-md-6">
+  <router-outlet></router-outlet>
 </div>
