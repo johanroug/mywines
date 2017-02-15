@@ -1,6 +1,6 @@
-import {Component} from "@angular/core";
+import {Component}      from "@angular/core";
 import {WineComService} from "../wine-com/wineCom.service";
-import {IWinesCom} from "../models";
+import {IWinesCom}      from "../models";
 
 @Component({
   selector: "mywines-overview",

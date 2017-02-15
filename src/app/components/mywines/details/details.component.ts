@@ -1,6 +1,6 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {Subscription} from "rxjs/Rx";
+import {ActivatedRoute}               from "@angular/router";
+import {Subscription}                 from "rxjs/Rx";
 
 import {IWinesCom} from "../models";
 import {WineComService} from "../wine-com/wineCom.service";

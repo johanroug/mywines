@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import {MywinesDataService} from "../mywinesdata.service";
-import {Form} from "@angular/forms";
-import {ICreateOwnWineItem} from "../models";
+import { Component }          from '@angular/core';
+import { ICreateOwnWineItem } from "../models";
+import { MywinesDataService } from "../data/mywinesdata.service";
 
 @Component({
   selector: 'mywines-create-item',
   templateUrl: './create-item.component.html',
   styleUrls: ['./create-item.component.scss']
 })
-export class CreateItemComponent implements OnInit {
+export class CreateItemComponent {
   constructor(private _handleDataService: MywinesDataService) {}
 
   onSubmit(data: ICreateOwnWineItem) {
     this._handleDataService.setOwnWineList(data);
   }
-
-  ngOnInit() {
-  }
-
 }

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {MywinesDataService} from "../mywinesdata.service";
+import { Component }          from '@angular/core';
+import { MywinesDataService } from "../data/mywinesdata.service";
 
 @Component({
   selector: 'app-ownwines',

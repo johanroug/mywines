@@ -1,8 +1,20 @@
-<form (ngSubmit)="onSubmit(data)" #data="ngForm">
-  <label for="Name">Name</label>
-  <input type="text" ngModel name="Name">
-  <br>
-  <label for="Country">Country</label>
-  <input type="text" ngModel name="Country">
-  <input type="submit" value="submit">
-</form>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Add wine
+  </div>
+  <div class="panel-body">
+    <form (ngSubmit)="onSubmit(data)" #data="ngForm">
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input class="form-control" type="text" ngModel name="Name">
+      </div>
+      <div class="form-group">
+        <label for="Country">Country</label>
+        <input class="form-control" type="text" ngModel name="Country">
+      </div>
+      <input type="submit" class="btn btn-default" value="submit">
+    </form>
+
+  </div>
+</div>
+

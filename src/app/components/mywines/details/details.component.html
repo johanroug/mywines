@@ -1,5 +1,5 @@
 <div class="panel panel-default details">
-  <div class="panel-heading">
+  <div class="panel-heading" *ngIf="selectedWine?.Vineyard.ImageUrl">
     <img src="{{selectedWine?.Vineyard.ImageUrl}}" alt="selectedWine?.Vineyard.Name">
   </div>
   <div class="panel-body text-center">

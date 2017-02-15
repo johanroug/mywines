@@ -1,6 +1,5 @@
-import { Injectable } from '@angular/core';
-import {Form} from "@angular/forms";
-import {ICreateOwnWineItem} from "./models";
+import { Injectable }         from '@angular/core';
+import { ICreateOwnWineItem } from "../models";
 
 @Injectable()
 export class MywinesDataService {
@@ -8,7 +7,7 @@ export class MywinesDataService {
   constructor() {
     this.ownWines = [
       {
-        "name": "Otto",
+        "name": "My own wine",
         "country": "Finland"
       }
     ]
