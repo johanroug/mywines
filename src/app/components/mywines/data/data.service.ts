@@ -2,7 +2,7 @@ import { Injectable }         from '@angular/core';
 import { ICreateOwnWineItem } from "../models";
 
 @Injectable()
-export class MywinesDataService {
+export class DataService {
   public ownWines: Array<Object>;
   constructor() {
     this.ownWines = [

@@ -1,5 +1,5 @@
 import { Component }          from '@angular/core';
-import { MywinesDataService } from "../data/mywinesdata.service";
+import { DataService } from "../data/data.service";
 
 @Component({
   selector: 'app-ownwines',
@@ -9,7 +9,7 @@ import { MywinesDataService } from "../data/mywinesdata.service";
 export class OwnwinesComponent {
   public ownWinesList: Array<Object>;
 
-  constructor(private _handleDataService: MywinesDataService) {
+  constructor(private _handleDataService: DataService) {
     this.ownWinesList = this._handleDataService.getOwnWineList();
   }
 }

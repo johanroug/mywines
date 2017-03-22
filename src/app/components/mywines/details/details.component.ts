@@ -10,7 +10,7 @@ import {WineComService} from "../wine-com/wineCom.service";
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
-export class MywinesDetailsComponent implements OnInit, OnDestroy {
+export class DetailsComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
   private wineIndex: number;
   public selectedWine: IWinesCom;

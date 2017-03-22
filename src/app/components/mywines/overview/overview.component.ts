@@ -7,7 +7,7 @@ import {IWinesCom}      from "../models";
   styleUrls: ["./overview.component.scss"],
   templateUrl: "./overview.component.html"
 })
-export class MywinesOverviewComponent {
+export class OverviewComponent {
   public wineCom: Object;
   constructor(private _mywineWineService: WineComService) {
 

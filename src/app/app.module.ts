@@ -6,13 +6,13 @@ import { AppComponent }             from './app.component';
 import { routing }                  from "./app.routing";
 
 import { HeaderComponent }          from './components/layout/header/header.component';
-import { MywinesOverviewComponent } from "./components/mywines/overview/overview.component";
-import { MywinesDetailsComponent }  from './components/mywines/details/details.component';
+import { OverviewComponent }        from "./components/mywines/overview/overview.component";
+import { DetailsComponent }         from './components/mywines/details/details.component';
 import { WineComService }           from "./components/mywines/wine-com/wineCom.service";
-import { MywinesStartComponent }    from './components/mywines/start/start.component';
+import { StartComponent }           from './components/mywines/start/start.component';
 import { OwnwinesComponent }        from './components/mywines/ownwines/ownwines.component';
 import { CreateItemComponent }      from './components/mywines/create-item/create-item.component';
-import { MywinesDataService }       from "./components/mywines/data/mywinesdata.service";
+import { DataService }              from "./components/mywines/data/data.service";
 
 @NgModule({
   imports:      [
@@ -24,14 +24,14 @@ import { MywinesDataService }       from "./components/mywines/data/mywinesdata.
   declarations: [
     AppComponent,
     HeaderComponent,
-    MywinesOverviewComponent,
-    MywinesDetailsComponent,
-    MywinesStartComponent,
+    OverviewComponent,
+    DetailsComponent,
+    StartComponent,
     OwnwinesComponent,
     CreateItemComponent ], // Components
   bootstrap:    [ AppComponent ],
   providers:    [
     WineComService,
-    MywinesDataService ] // Services
+    DataService ] // Services
 })
 export class AppModule { }

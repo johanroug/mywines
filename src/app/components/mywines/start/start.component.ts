@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'mywines-start',
   templateUrl: './start.component.html'
 })
-export class MywinesStartComponent {
+export class StartComponent {
 
 }
